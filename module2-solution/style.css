@@ -18,8 +18,7 @@ h1.title{
 }
 
 .menu {
-    /* margin-right: 1.5em; */
-    /* margin-left: 1.5em; */
+    margin: 1.5em 1.5em;
     padding: .5em .5em;
     background-color: rgb(178, 173, 173);
     border: 2px solid black;
@@ -55,15 +54,24 @@ h1.title{
 @media (min-width:576px) {
     .menu {
         flex: 0 0 auto;
-        width: 100%
+        width: 93%
     }
 }
 
 /* Tablet */
-@media (min-width:768px) {
+
+@media (min-width: 768px) and (max-width: 991px){
+    .row{
+        margin-left: 5em;
+    }
+
     .menu {
         flex: 0 0 auto;
-        width: 50%
+        width: 40%
+    }
+
+    .row .menu:nth-child(3){
+        width: 86%
     }
 }
 
